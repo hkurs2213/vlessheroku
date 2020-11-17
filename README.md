@@ -33,6 +33,7 @@ vless 性能更加优秀，占用资源更少。
 
 可以使用cloudflare的workers来`中转流量`，配置为：  
 
+```
 addEventListener(  
     "fetch",event => {  
         let url=new URL(event.request.url);  
@@ -43,3 +44,4 @@ addEventListener(
         )  
     }  
 )  
+```
